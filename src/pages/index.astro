@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const date = new Date();
+
+const color = "blue";
+---
+
+<Layout title="Index page">
+  <h1>Main page</h1>
+
+  <span style={{ color }}>{date.toDateString()}</span>
+  <div class="about-page-link">
+    <a href="/about">About page</a>
+  </div>
+</Layout>
+
+<style>
+  .about-page-link {
+    background-color: bisque;
+    color: black;
+    border-radius: 10%;
+    padding: 10px;
+    width: 110px;
+  }
+  .about-page-link:hover {
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 10%;
+    padding: 10px;
+    width: 110px;
+  }
+</style>
